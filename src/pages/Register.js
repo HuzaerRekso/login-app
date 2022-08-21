@@ -33,7 +33,7 @@ const Register = props => {
             setErrorPassword('Password length minimum is 8');
         } else if (!passwordPattern.test(valPassword)) {
             error = true;
-            setErrorPassword('Password format must contain uppercase, lowercase and number');
+            setErrorPassword('Password format must contain uppercase, lowercase, number and symbol');
         }
 
         return error;
